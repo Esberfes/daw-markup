@@ -1,0 +1,59 @@
+/* POWERED BY ESBERFES */
+.acordion {
+	/* SILENCE IS GOLDEN uuhhhh */
+}
+.acordion-title {
+	font-size: 1.4em;
+	color: #f40033;
+}
+.acordion-title::before{
+	content: "";
+	vertical-align: bottom;
+	display: inline-block;
+	background-image: url(../images/layout/down-squared.png);
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}
+.acordion-content {
+    font-size: 1.0em;
+    display: none;
+    margin-top: 20px;
+}
+.acrodion-element {
+	color: black;
+	border: solid 1px lightgray;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.acrodion-element:last-child {margin-bottom: 0px; }
+.acordion-bg {
+	height: inherit;
+    background-image: url(/imagenes/faq-acordion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media (max-width: 992px) {
+	.acordion-title {
+        font-size: 1.0666em;
+      }
+      .acordion-content {
+        font-size: 0.83em;
+      }
+      .acordion-bg {
+        display: none;
+      }
+}
+.acordion-bg {
+    height: inherit;
+    background-image: url(../images/layout/acordion.jpg );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+	border-radius: 5px;
+}

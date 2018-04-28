@@ -1,0 +1,8 @@
+/* HEADER */
+header {
+     
+	 background-image: url(../images/layout/knowledge.jpg);
+}
+.filter-gray{
+	filter: grayscale(80%);
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+    <title>Cursos</title>
+
+    <!-- GENERAL DEPENDENCIES -->
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/esber-framework.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- ESPECIFIC PAGE DEPENDENCIES -->
+    <link rel="stylesheet" href="css/cursos.css">
+	<link rel="stylesheet" href="css/modals-cursos.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	
+</head>
+<body>
+
+	<!-- NAVIGATION -->
+	<div class="nav-sticky" id="nav"></div>
+	
+	<!-- HEADER -->
+	<div id="header">
+		<div id="particles-js"></div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<main class="col-12">
+				<h1>Nuestros cursos</h1>
+				<p>En esta sección te ofrecemos una selección de cursos desarrollados por nuestra comunidad.</p>
+				<div id="cursos"></div>
+				<hr>
+			</main>
+		</div>
+	</div>
+	
+	<!-- FOOTER  -->
+	<div id="footer"></div>
+	
+	<script src="js/particles.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/loadXML.js"></script>
+	<script src="js/layout.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>	
+		loadXML("xml/cursos.xml", "xml/cursos.xsl" , "cursos");
+	</script>
+	<script src="js/modal.js"></script>
+	
+</body>
+</html>

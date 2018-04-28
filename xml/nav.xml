@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation>
+	<logo>images/logos/logo-esbacademy.svg</logo>
+	<menu>
+		<title>Home</title>
+		<url>index.html</url>
+	</menu>
+	<menu>
+		<title>Cursos</title>
+		<url>cursos.html</url>
+	</menu>
+	<menu>
+		<dropdown>
+			<title>Categorias</title>
+			<submenu>	
+				<menu>
+					<title>HTML</title>
+					<url>cursos-html.html</url>
+				</menu>
+				<menu>
+					<title>CSS</title>
+					<url>cursos-css.html</url>
+				</menu>
+				<menu>
+					<title>JavaScript</title>
+					<url>cursos-js.html</url>
+				</menu>
+			</submenu>
+		</dropdown>
+	</menu>
+	<menu>
+		<title>Contacto</title>
+		<url>contacto.html</url>
+	</menu>
+</navigation>

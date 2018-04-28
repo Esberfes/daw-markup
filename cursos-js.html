@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cursos - CSS</title>
+
+    <!-- GENERAL DEPENDENCIES -->
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/esber-framework.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- ESPECIFIC PAGE DEPENDENCIES -->
+    <link rel="stylesheet" href="css/cursos-js.css">
+	
+</head>
+<body>
+
+	<!-- NAVIGATION -->
+	<div class="nav-sticky" id="nav"></div>
+	
+	<!-- HEADER -->
+	<div id="header">
+		<div id="particles-js"></div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<main class="col-12 col-lg-9">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consectetur dolorem sit quidem ducimus perspiciatis molestiae possimus, laudantium eaque cum harum, at saepe aspernatur esse, voluptates deleniti reprehenderit expedita corporis!</p>
+			</main>
+			<aside class="col-12 col-lg-3">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nisi iure consequatur at. Eius consequatur dolorum, velit optio! Excepturi mollitia nihil labore voluptatum odio veniam voluptates molestias eum sunt inventore!
+			</aside>
+		</div>
+	</div>
+	
+	
+	<!-- FOOTER  -->
+	<div id="footer"></div>
+	
+	<script src="js/particles.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/loadXML.js"></script>
+	<script src="js/layout.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>	
+		loadXML("xml/cursos.xml", "xml/cursos.xsl" , "cursos");
+	</script>
+	<script src="js/modal.js"></script>
+	
+</body>
+</html>

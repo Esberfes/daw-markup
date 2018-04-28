@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cursos>
+
+	<curso>
+		<nombre></nombre>
+		<categoria></categoria>
+		<autor></autor>
+		<indice></indice>
+		<descripcion></descripcion>
+		<duracion></duracion>
+		<urlfoto></urlfoto>
+	</curso>
+	
+</cursos>
