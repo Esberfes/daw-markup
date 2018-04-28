@@ -5,7 +5,7 @@
 		<div class="row">
 			
 			<xsl:for-each select="cursos/curso">
-				<xsl:if test="categoria='html'">
+				<xsl:if test="categoria='js'">
 					<div class="col-12 col-lg-3 mb-5 mt-5">
 						<div style="height:100%" class="e-card curso-cnt wow zoomInDown">
 							<div class="curso">

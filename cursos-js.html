@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cursos - CSS</title>
+    <title>Cursos - JS</title>
 
     <!-- GENERAL DEPENDENCIES -->
     <link rel="stylesheet" href="css/bootstrap-grid.css">
@@ -15,6 +15,8 @@
 
     <!-- ESPECIFIC PAGE DEPENDENCIES -->
     <link rel="stylesheet" href="css/cursos-js.css">
+	<link rel="stylesheet" href="css/modals-cursos.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	
 </head>
 <body>
@@ -29,26 +31,26 @@
 	
 	<div class="container">
 		<div class="row">
-			<main class="col-12 col-lg-9">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consectetur dolorem sit quidem ducimus perspiciatis molestiae possimus, laudantium eaque cum harum, at saepe aspernatur esse, voluptates deleniti reprehenderit expedita corporis!</p>
+			<main class="col-12">
+				<h1>Nuestros cursos JavaScript</h1>
+				<p>En esta sección te ofrecemos una selección de cursos desarrollados por nuestra comunidad.</p>
+				<div id="cursos"></div>
+				<hr>
 			</main>
-			<aside class="col-12 col-lg-3">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nisi iure consequatur at. Eius consequatur dolorum, velit optio! Excepturi mollitia nihil labore voluptatum odio veniam voluptates molestias eum sunt inventore!
-			</aside>
 		</div>
 	</div>
 	
 	
 	<!-- FOOTER  -->
 	<div id="footer"></div>
-	
+
 	<script src="js/particles.min.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/loadXML.js"></script>
 	<script src="js/layout.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script>	
-		loadXML("xml/cursos.xml", "xml/cursos.xsl" , "cursos");
+		loadXML("xml/cursos.xml", "xml/cursos-js.xsl" , "cursos");
 	</script>
 	<script src="js/modal.js"></script>
 	

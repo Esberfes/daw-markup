@@ -12,9 +12,12 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!-- ESPECIFIC PAGE DEPENDENCIES -->
     <link rel="stylesheet" href="css/contacto.css">
+	<link rel="stylesheet" href="css/modals-cursos.css">
+	
 	
 </head>
 <body>
@@ -27,18 +30,59 @@
 		<div id="particles-js"></div>
 	</div>
 	
-	<div class="container">
+	<main class="container">
+		<h1>Contacta con ESB-Academy</h1>
+		
 		<div class="row">
 			<main class="col-12 col-lg-9">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consectetur dolorem sit quidem ducimus perspiciatis molestiae possimus, laudantium eaque cum harum, at saepe aspernatur esse, voluptates deleniti reprehenderit expedita corporis!</p>
+				<p>Si deseas contactar con nosotros, puedes hacerlo a través de esta sección y el formulario que te facilitamos. Indícanos tus datos de contacto y el objeto de tu solicitud.</p>
+				
+				<div class="row mt-5">
+					<div class="col-12 col-lg-4">
+						<ul>
+							<li>Publica nuevos cursos</li>
+							<li>Colabora con otros autores</li>
+							<li>Envianos tus dudas</li>
+							<li>Forma parte del equipo de desarrollo</li>
+						</ul>
+					
+					</div>
+					<div class="col-12 col-lg-8">
+						<img width="100%" src="images/layout/comunication.png" alt="">
+					</div>
+				
+				
+					<div class="col-12 col-lg-12 mt-5">
+						
+						<form class="main-form">
+							<div class="row">
+								<div class="col-12">
+									<input placeholder="Tu nombre" type="text"/>
+								</div>
+								<div class="col-12">
+									<input placeholder="Tu email" type="email"/>
+								</div>
+								<div class="col-12">
+									<textarea  cols="40" rows="10" placeholder="Comentarios"></textarea>
+								</div>
+								<div class="col-12"><div class="e-btn">Enviar</div></div>
+
+							</div>
+						</form>
+					</div>
+				</div>
+
+				
 			</main>
 			<aside class="col-12 col-lg-3">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nisi iure consequatur at. Eius consequatur dolorum, velit optio! Excepturi mollitia nihil labore voluptatum odio veniam voluptates molestias eum sunt inventore!
+					<h2>Últimos cursos</h2>
+					<div id="cursos"></div>
 			</aside>
 		</div>
-	</div>
+		<hr>
+	</main>
 	
-	
+
 	<!-- FOOTER  -->
 	<div id="footer"></div>
 
@@ -46,5 +90,10 @@
 	<script src="js/wow.min.js"></script>
 	<script src="js/loadXML.js"></script>
 	<script src="js/layout.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script>	
+		loadXML("xml/cursos.xml", "xml/cursos-ultimos.xsl" , "cursos");
+	</script>
+	<script src="js/modal.js"></script>
 </body>
 </html>

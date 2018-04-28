@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="cursos-tamplate.xml" server="esberfes.icons.es" local="131688084098534269" remote="131694024600000000" Dst="2" />
-<file name="cursos.xml" server="esberfes.icons.es" local="131690863272934994" remote="131694024600000000" Dst="2" />
-<file name="footer.xsl" server="esberfes.icons.es" local="131688084099014617" remote="131694024600000000" Dst="2" />
-<file name="footer.xml" server="esberfes.icons.es" local="131688084099064647" remote="131694024600000000" Dst="2" />
-<file name="header.xml" server="esberfes.icons.es" local="131688084099229772" remote="131694024600000000" Dst="2" />
-<file name="header.xsl" server="esberfes.icons.es" local="131691409910267369" remote="131694024600000000" Dst="2" />
-<file name="nav.xml" server="esberfes.icons.es" local="131690821864697311" remote="131694024600000000" Dst="2" />
-<file name="nav.xsl" server="esberfes.icons.es" local="131691577078783039" remote="131694024600000000" Dst="2" />
-<file name="cursos.xsl" server="esberfes.icons.es" local="131691376033044961" remote="131694024600000000" Dst="2" />
-<file name="cursos-html.xsl" server="esberfes.icons.es" local="131691376032294404" remote="131694024600000000" Dst="2" />
+<file name="cursos-tamplate.xml" server="esberfes.icons.es" local="131694099712244257" remote="131694028200000000" Dst="2" />
+<file name="cursos.xml" server="esberfes.icons.es" local="131694099712944624" remote="131694028200000000" Dst="2" />
+<file name="footer.xsl" server="esberfes.icons.es" local="131694099713399952" remote="131694028200000000" Dst="2" />
+<file name="footer.xml" server="esberfes.icons.es" local="131694099713075405" remote="131694028200000000" Dst="2" />
+<file name="header.xml" server="esberfes.icons.es" local="131694099713424975" remote="131694028200000000" Dst="2" />
+<file name="header.xsl" server="esberfes.icons.es" local="131694099713590093" remote="131694028200000000" Dst="2" />
+<file name="nav.xml" server="esberfes.icons.es" local="131694099713840277" remote="131694028200000000" Dst="2" />
+<file name="nav.xsl" server="esberfes.icons.es" local="131694099714010389" remote="131694028200000000" Dst="2" />
+<file name="cursos.xsl" server="esberfes.icons.es" local="131694099712824545" remote="131694028200000000" Dst="2" />
+<file name="cursos-html.xsl" server="esberfes.icons.es" local="131694099712159074" remote="131694028200000000" Dst="2" />
+<file name="cursos-css.xsl" server="esberfes.icons.es" local="131694099711493808" remote="131694028200000000" Dst="2" />
+<file name="cursos-js.xsl" server="esberfes.icons.es" local="131694099712229127" remote="131694028200000000" Dst="2" />
+<file name="cursos-ultimos.xsl" server="esberfes.icons.es" local="131694099712584565" remote="131694028200000000" Dst="2" />
 </dwsync>

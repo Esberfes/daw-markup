@@ -4,9 +4,9 @@
     <xsl:template match="/">
 		<div class="row">
 			
-			<xsl:for-each select="cursos/curso">
-				<xsl:if test="categoria='html'">
-					<div class="col-12 col-lg-3 mb-5 mt-5">
+			<xsl:for-each select="cursos/curso[position()&lt;=2]">
+				<!--<xsl:if test="(position( ) < 3">-->
+					<div class="col-12 col-lg-12 mb-5 ">
 						<div style="height:100%" class="e-card curso-cnt wow zoomInDown">
 							<div class="curso">
 								<img width="100%">
@@ -94,7 +94,7 @@
 							</div>
 						</div>
 					</div>
-				</xsl:if>
+				<!--</xsl:if>-->
 			</xsl:for-each>
 		</div>
 
