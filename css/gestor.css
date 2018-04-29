@@ -1,6 +1,9 @@
 header {
     background-image: url(../images/layout/index.jpg);
 }
+*{
+	box-sizing: border-box;
+}
 .main-form {
 	border-radius: 5px;
 	color: white;
@@ -8,7 +11,7 @@ header {
     padding: 30px;
 	border: solid 1px black;
 }
-.main-form input {
+.main-form input, .main-form select{
 	display: block;
 	padding-left: 5px;
 	padding-right: 5px;
@@ -20,6 +23,8 @@ header {
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14);
     font-weight: 600;
 	border: solid 1px black;
+	max-height: 180px;
+	vertical-align: middle;
 }
 .main-form label {
 	display: block;

@@ -561,7 +561,7 @@
 				</element>
 				<element>
 					Aumentar las posibilidades laborales como programador
-				</element>
+				</element>&gt;
 			</list>
 		</indice>
 		
@@ -628,4 +628,4 @@
 		<duracion>8</duracion>
 		<urlfoto>images/cursos/js4.jpg</urlfoto>
 	</curso>
-</cursos>
+<curso><id>20</id><nombre>test</nombre></curso></cursos>
