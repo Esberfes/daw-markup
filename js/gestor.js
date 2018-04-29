@@ -10,6 +10,10 @@ $("#nuevoEnviar").click(function(){
 	let indice = $("#nuevoIndice").val();
 	let descripcion = $("#nuevoDescripcion").val();
 	
+	descripcion = descripcion.replace(/\n/g, "::");
+	indice = indice.replace(/\n/g, "::");
+	
+	console.log(descripcion);
 	$.ajax({
 		url: 'php/functions.php',
 		type: 'post',

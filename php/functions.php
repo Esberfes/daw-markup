@@ -112,7 +112,7 @@
 			$curso->addChild('urlfoto' , $url_foto);
 			
 			//Guardar nuevos datos
-			$this->xml_object->asXml('../xml/test.xml');
+			$this->xml_object->asXml('../xml/cursos.xml');
 
 		}
 		
