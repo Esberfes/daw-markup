@@ -628,4 +628,4 @@
 		<duracion>8</duracion>
 		<urlfoto>images/cursos/js4.jpg</urlfoto>
 	</curso>
-<curso><id>13</id><nombre>Nombre</nombre><categoria>html</categoria><autor>Javier Casas</autor><subtitulo>subtitulo</subtitulo><indice><list><element>1 blabla </element><element> 2 lo otro </element><element> 3 que pasa</element></list></indice><descripcion><paragraph>desc1 </paragraph><paragraph> desc2 </paragraph><paragraph> desc 33</paragraph></descripcion><duracion>20</duracion><urlfoto>https://udemy-images.udemy.com/course/240x135/1359608_2ee1_9.jpg</urlfoto></curso></cursos>
+</cursos>

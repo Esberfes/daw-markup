@@ -38,53 +38,63 @@ header('Content-Type: text/html; charset=utf-8');
 
     <main class="mt-5">
 		<div class="container">
-			<?php
-				define("CURSOS_PATH", "xml/cursos.xml");
+			<h1>Gestor de contenidos</h1>
+			<hr>
 			
-			
-				$cursos_object = new Cursos(CURSOS_PATH);
-			
-				//var_dump($cursos_object->get_curso_by_id(1));
-			
-				/*
-				$cursos = $cursos_object->get_cursos();
-				foreach($cursos as $curso){
-					echo $curso['id'];
-				}
-				*/
-				// function add_curso($nombre,$categoria,$autor,$subtitulo,$indice_in,$descripcion_in, $duracion, $url_foto){
-				$cursos_object->add_curso("Nombre" , "html", "Javier Casas", "subtitulo", "1 blabla :: 2 lo otro :: 3 que pasa", "desc1 :: desc2 :: desc 33", "20" , "https://udemy-images.udemy.com/course/240x135/1359608_2ee1_9.jpg");
-			?>
+			<h2>Añadir nuevo curso</h2>
 			<div class="row main-form">
 				<div class="col-3">
-					<input placeholder="Nombre del curso" type="text">
+					<input id="nuevoNombre" placeholder="Nombre del curso" type="text">
 				</div>
 				<div class="col-3">
-					<select name="" id="">
+					<select id="nuevoCategoria" name="" id="">
 						<option value="html">html</option>
 						<option value="css">css</option>
 						<option value="js">js</option>
 					</select>
 				</div>
 				<div class="col-3">
-					<input placeholder="Autor" type="text">
+					<input id="nuevoAutor" placeholder="Autor" type="text">
 				</div>
 				<div class="col-3">
-					<input placeholder="Duracion" type="number">
+					<input id="nuevoDuracion" placeholder="Duracion" type="number">
 				</div>
 				<div class="col-12">
-					<input placeholder="Url foto" type="url" >
+					<input id="nuevoUrl" placeholder="Url foto" type="url" >
 				</div>
 				<div class="col-4">
-					<textarea  cols="40" rows="10" placeholder="Subtitulo"></textarea>
+					<textarea id="nuevoSubtitulo" cols="40" rows="10" placeholder="Subtitulo"></textarea>
 				</div>
 				<div class="col-4">
-					<textarea  cols="40" rows="10" placeholder="Indice de contenidos"></textarea>
+					<textarea  id="nuevoIndice" cols="40" rows="10" placeholder="Indice de contenidos"></textarea>
 				</div>
 				<div class="col-4">
-					<textarea  cols="40" rows="10" placeholder="Descripcion"></textarea>
+					<textarea id="nuevoDescripcion"  cols="40" rows="10" placeholder="Descripcion"></textarea>
+				</div>
+				<div class="col-12"><div id="nuevoEnviar" class="e-btn">Enviar</div></div>
+			</div>
+			
+			<hr>
+			
+			<h2>Eliminar curso</h2>
+			<div class="row main-form">
+				<div class="col-6">
+					<input id="idEleminar" placeholder="Id del curso" type="number">
+				</div>
+				<div class="col-12">
+					<div id="btnEliminar" class="e-btn">Eliminiar</div>
 				</div>
 			</div>
+			
+			<hr>
+			
+			<h2>Restaurar backup</h2>
+			<div class="row main-form">>
+				<div class="col-12">
+					<div id="btnBackup" class="e-btn">Restaurar</div>
+				</div>
+			</div>
+			
         </div>
     </main>
 
@@ -96,7 +106,7 @@ header('Content-Type: text/html; charset=utf-8');
 	<script src="js/loadXML.js"></script>
 	<script src="js/layout.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="js/acordion.js"></script>
+	<script src="js/gestor.js"></script>
 	
 	
 

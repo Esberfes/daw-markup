@@ -34,7 +34,9 @@
 											<h5><xsl:value-of select="subtitulo"/></h5>
 											<div class="mt-3">
 												<span class="mr-3" ><b style="margin-right: 10px;">Categoría:</b><xsl:value-of select="categoria"/></span>
-												<span><b style="margin-right: 10px;">Duración:</b><xsl:value-of select="duracion"/>h</span>
+												<span class="mr-3"><b style="margin-right: 10px;">Duración:</b><xsl:value-of select="duracion"/>h</span>
+												<span class="mr-3"><b style="margin-right: 10px;">Autor:</b><xsl:value-of select="autor"/></span>
+												<span class="mr-3"><b style="margin-right: 10px;">Id:</b><xsl:value-of select="id"/></span>
 											</div>
 										</div>	
 										<div class="col-12 col-lg-6 mt-3">

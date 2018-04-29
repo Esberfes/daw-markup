@@ -112,8 +112,114 @@
 			$curso->addChild('urlfoto' , $url_foto);
 			
 			//Guardar nuevos datos
-			$this->xml_object->asXml('xml/test.xml');
+			$this->xml_object->asXml('../xml/test.xml');
 
 		}
+		
+		public function borrar_curso($id){
+			foreach($this->xml_object->curso as $curso){
+				$id_curso = $curso->id;
+				if($id_curso != $id) continue;
+				$dom=dom_import_simplexml($curso);
+        		$dom->parentNode->removeChild($dom);
+				break;
+			}
+			$this->xml_object->asXml('../xml/cursos.xml');
+		}
+		
+		public function guardar(){
+			$this->xml_object->asXml('../xml/cursos.xml');
+		}
 	}
+
+	if(isset($_POST['nombre'])){
+		header('Content-Type: text/html; charset=utf-8');
+		define("CURSOS_PATH", "../xml/cursos.xml");
+		$response = array();
+		$error = false;
+		$errors = "No errors";
+		
+		$nombre = $_POST['nombre'];
+		$categoria = $_POST['categoria'];
+		$autor = $_POST['autor'];
+		$duracion = $_POST['duracion'];
+		$url = $_POST['url'];
+		$subtitulo = $_POST['subtitulo'];
+		$indice = $_POST['indice'];
+		$descripcion = $_POST['descripcion'];
+		
+		$cursos_object = new Cursos(CURSOS_PATH);
+		
+		$cursos_object->add_curso($nombre,$categoria,$autor,$subtitulo,$indice,$descripcion, $duracion, $url);
+		
+		if(!$error){
+			$response = array(
+				"Response" => "OK",
+				"Errors" => $errors
+			);
+		} else {
+			$response = array(
+				"Response" => "KO",
+				"Errors" => $errors
+			);
+		}
+		
+		echo json_encode($response);
+		exit();
+	}
+
+	if(isset($_POST['eliminar']) && isset($_POST['id'])){
+		header('Content-Type: text/html; charset=utf-8');
+		define("CURSOS_PATH", "../xml/cursos.xml");
+		$response = array();
+		$error = false;
+		$errors = "No errors";
+		
+		$id = $_POST['id'];
+		$cursos_object = new Cursos(CURSOS_PATH);
+		
+		$cursos_object->borrar_curso($id);
+		
+		if(!$error){
+			$response = array(
+				"Response" => "OK",
+				"Errors" => $errors
+			);
+		} else {
+			$response = array(
+				"Response" => "KO",
+				"Errors" => $errors
+			);
+		}
+		
+		echo json_encode($response);
+		exit();
+	}
+
+	if(isset($_POST['restaurar'])){
+		header('Content-Type: text/html; charset=utf-8');
+		define("CURSOS_PATH", "../xml/cursos-backup.xml");
+		$response = array();
+		$error = false;
+		$errors = "No errors";
+		
+		$cursos_object = new Cursos(CURSOS_PATH);
+		
+		$cursos_object->guardar();
+		
+		if(!$error){
+			$response = array(
+				"Response" => "OK",
+				"Errors" => $errors
+			);
+		} else {
+			$response = array(
+				"Response" => "KO",
+				"Errors" => $errors
+			);
+		}
+		
+		echo json_encode($response);
+		exit();
+	};
 ?>
