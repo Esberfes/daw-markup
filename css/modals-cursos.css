@@ -23,6 +23,13 @@
 	overflow: auto;
 	z-index: 1000;
 }
+.modal::before{
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: block;
+}
 .modal-content {
 
     background-color: #fefefe;

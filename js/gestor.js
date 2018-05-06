@@ -20,6 +20,14 @@ $("#nuevoEnviar").click(function(){
 		dataType: 'json',
 		success: function (data) {
 			console.log(data);	
+			
+			$("#nuevoNombre").val("");
+			$("#nuevoAutor").val("");
+			$("#nuevoDuracion").val("");
+			$("#nuevoUrl").val("");
+			$("#nuevoSubtitulo").val("");
+			$("#nuevoIndice").val("");
+			$("#nuevoDescripcion").val("");
 		},
 		data: { 
 			nombre : nombre,
@@ -43,6 +51,7 @@ $("#btnEliminar").click(function(){
 		dataType: 'json',
 		success: function (data) {
 			console.log(data);	
+			$("#idEleminar").val("");
 		},
 		data: { 
 			eliminar : true,

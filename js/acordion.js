@@ -7,7 +7,7 @@ $(".acrodion-element").click(function(){
 		child.slideUp(500);
 	} else {
 		child.slideDown(500);
-		if(active !== null && !active.is(child)) active.hide(500);
+		if(active !== null && !active.is(child)) active.slideUp(500);
 		active = child;
 	}
 });
